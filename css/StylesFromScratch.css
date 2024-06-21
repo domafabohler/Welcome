@@ -1,0 +1,198 @@
+/* I was not happy with the fact that most element have a standard padding. Therefore, I set everything to 0 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* The overall family is sans-serif */
+body{
+    font-family: sans-serif;
+    background-color: rgb(236, 197, 125);
+}
+
+/* Page Title */
+h1{
+    font-size: 40px;
+    font-weight: 300;
+}
+/* Main Sections */
+h2{
+    border-bottom: 1px black solid;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 100;
+    padding-top: 20px;
+}
+/* Since I capatalized all letters in h2 I wanted to emphasize the first letter */
+h2::first-letter{
+    font-size: 30px
+}
+
+/* Company or Institution */
+h3{
+    color: rgb(110, 110, 110);
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+/* for the City to appear in the same line as the institution I defined the style as strong of h3 */
+h3 strong {
+    font-style: italic;
+    font-weight: 100;
+}
+/* Position*/
+h4{
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+/* Date */
+h5{
+    color: rgb(110, 110, 110);
+    padding-top: 15px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+/* for the link not to change color I changed it to inherit */
+a{
+    color: inherit;
+}
+
+/* Page Parts */
+.header-nav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px; 
+    height: 30px;
+    background-color: white;
+    z-index: 1;
+    text-align: center;
+    padding: 5px;
+}
+/* I did not like the underline */
+.header-nav a{
+    text-decoration: none;
+}
+
+/* Headersection including contact details */
+.ResumeHeader{
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    height: 70px;
+    background-color: darkblue;
+    color: white;
+    margin-top: 0px;
+    padding-top: 0px;
+    border-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ResumeHeader .left{
+    width: 60%;
+    position: relative;
+    padding-left: 15px;
+}
+.ResumeHeader .center{
+    width: 20%;
+    position: relative;
+    text-align: right;
+    text-align: center;
+}
+.ResumeHeader .right{
+    width: 20%;
+    position: relative;
+    text-align: center;
+}
+
+/* I decided to add a footer even though I did not yet add any content to it */
+.footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: darkblue;
+    height: 30px;
+}
+
+/* The main section is supposed to be the box which includes the sidebar & MainBody */
+.Main{
+    top: 130px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+.SideBar{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 20%;
+    background-color: lightgray;
+    padding: 10px;
+    height: auto;
+    /* display: inline; */
+    /* height: 1268px; */
+}
+.SideBar h2{
+    padding-right: 10px;
+}
+.MainBody{
+    position: relative;
+    width: 80%;
+    height: fit-content;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 100px;
+}
+
+/* the line item is supposed to hold element within one line */
+.line{
+    width: 100%;
+    position: relative;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* the time is supposed to be at the left side */
+.time{
+    width: 15%;
+    position: relative;
+    height: 100%;
+    padding-right: 10px;
+    text-align: right;
+}
+/* the content on the right side */
+.content{
+    width: 80%;
+    position: relative;
+    height: fit-content;
+    border-left: solid black 1px;
+    padding-left: 10px;
+}
+/* all lists had their points to far left after I set everything to 0 by standard */
+ul{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+li{
+    padding-top: 2px;
+}
+ol{
+    padding-left: 20px;
+}
+/* wihtin the IS section I needed more spacing */
+.IS201{
+    position: relative;
+    width: 100%;
+    padding: 50px;
+}
+.IS201 h2{
+    margin-bottom: 20px;
+}
